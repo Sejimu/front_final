@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useTodoContext } from "../contexts/TodoContext";
 import ListGroup from "react-bootstrap/ListGroup";
 import TodoItem from "./TodoItem";
+import Button from "react-bootstrap/Button";
 
 function TodoList(): JSX.Element {
   const { todos, getTodos } = useTodoContext();
@@ -11,8 +12,12 @@ function TodoList(): JSX.Element {
   }, []);
 
   return (
-    <div>
+    <div
+      className="container"
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
       <h1>TodoList</h1>
+      <Button variant="dark">Random Task Generator</Button>
       <ListGroup>
         {todos.map((item) => (
           <TodoItem key={item.id} item={item} />

@@ -8,7 +8,7 @@ function Header(): JSX.Element {
   return (
     <Navbar bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand onClick={() => navigate("/")}>Navbar</Navbar.Brand>
+        <Navbar.Brand onClick={() => navigate("/")}>Todo</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link onClick={() => navigate("/")}>Home</Nav.Link>
           <Nav.Link onClick={() => navigate("/add")}>Add todo</Nav.Link>
