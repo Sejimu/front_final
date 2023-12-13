@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# Todo with random tasks generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project for my final front-end project. This project is for task management to save your time and keep all your tasks in your mind.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [ScreenShots](#screenShots)
+- [Installation](#installation)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+This project is for task management to save your time and keep all your tasks in your mind.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- React
+- TypeScript
+- Vite
+- Axios
+- React Router Dom
+- Bootstrap
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Getting Started
+
+first [install](#installation) project from github
+second npm install
+third npm run dev
+fourth enjoy
+
+## ScreenShots
+![image](https://github.com/Sejimu/front_final/assets/132245771/5b594ba0-7869-4ac4-91a1-6aaf928789a4)
+![image](https://github.com/Sejimu/front_final/assets/132245771/44cd0006-0e39-4db4-b83e-4e3fdf2b838c)
+![image](https://github.com/Sejimu/front_final/assets/132245771/210bb2c4-56b3-42a4-8e94-0a7db6af08ff)
+![image](https://github.com/Sejimu/front_final/assets/132245771/08beb3cc-42eb-43f7-8d45-c431fd3e1e7a)
+
+### Installation
+
+ Clone the repository
+   ```bash
+   git clone https://github.com/your-username/your-repository.git](https://github.com/Sejimu/front_final.git)https://github.com/Sejimu/front_final.git ```
+
+
+
