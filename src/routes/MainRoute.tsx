@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
-import MainLayout from "../layouts/MainLayout";
+import MainLayout from "../layouts/MainLayoout";
 import AddTodo from "../pages/AddPage";
 import EditTodoPage from "../pages/EditPage";
 
