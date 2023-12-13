@@ -2,27 +2,22 @@
   "todos": [
     {
       "id": 1,
-      "title": "trim is the best",
+      "title": "Write in a journal",
       "completed": false
     },
     {
       "id": 2,
-      "title": "huthugthugthugthugt",
+      "title": "Volunteer for a cause",
       "completed": false
     },
     {
       "id": 3,
-      "title": "йцыввыывывывывывыввы",
+      "title": "Take a digital detox day",
       "completed": false
     },
     {
       "id": 4,
-      "title": "wertrewqertrew",
-      "completed": false
-    },
-    {
-      "id": 5,
-      "title": "qwerwqwe",
+      "title": "Write in a journal",
       "completed": false
     }
   ]

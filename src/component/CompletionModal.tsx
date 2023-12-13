@@ -4,13 +4,12 @@ import Modal from "react-bootstrap/Modal";
 
 interface CompletionModalProps {
   show: boolean;
-  handleShow: (event: React.MouseEvent) => void;
   handleClose: () => void;
 }
 
 const CompletionModal: React.FC<CompletionModalProps> = ({
   show,
-  handleShow,
+
   handleClose,
 }) => {
   return (

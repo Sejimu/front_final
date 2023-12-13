@@ -26,11 +26,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ item }) => {
 
   return (
     <ListGroup.Item style={{ width: "800px" }}>
-      <CompletionModal
-        show={show}
-        handleShow={handleShow}
-        handleClose={handleClose}
-      />
+      <CompletionModal show={show} handleClose={handleClose} />
       <div className="form-check">
         <input
           className="form-check-input"
