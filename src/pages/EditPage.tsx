@@ -6,20 +6,18 @@ import { useTodoContext, Todo } from "../contexts/TodoContext";
 function EditTodoPage(): JSX.Element {
   const { editTodo, oneTodo, getOneTodo } = useTodoContext();
   const navigate = useNavigate();
-  const [title, setTitle] = useState<string>("");
+  const [title, setTitle] = useState<string>(oneTodo ? oneTodo.title : "");
   const { id } = useParams();
-
-  //   const paramId:number = parseInt(id)
 
   useEffect(() => {
     id && getOneTodo(parseInt(id));
   }, [getOneTodo]);
 
-  useEffect(() => {
-    if (oneTodo) {
-      setTitle(oneTodo.title);
-    }
-  }, [oneTodo]);
+  //   useEffect(() => {
+  //     if (oneTodo && !title) {
+  //       setTitle(oneTodo.title);
+  //     }
+  //   }, [oneTodo]);
 
   function handleChange(e: ChangeEvent<HTMLInputElement>): void {
     setTitle(e.target.value);
@@ -37,8 +35,9 @@ function EditTodoPage(): JSX.Element {
       completed: false,
     };
     editTodo(Number(id), newTodo);
-    // setTitle("");
-    navigate("/");
+    setTimeout(() => {
+      navigate("/");
+    }, 100);
   }
 
   return (
