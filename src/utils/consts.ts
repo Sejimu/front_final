@@ -1,4 +1,7 @@
-export const API: string = "http://localhost:8000/todos";
+// !LOCAL API
+// export const API: string = "http://localhost:8000/todos";
+//! REMOTE DEPLOY API
+export const API: string = "https://server-api-beige.vercel.app/api/todos";
 
 export const tasks = [
   "Read a book",

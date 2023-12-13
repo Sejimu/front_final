@@ -19,6 +19,11 @@
       "id": 4,
       "title": "Write in a journal",
       "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Do a puzzle",
+      "completed": false
     }
   ]
 }
