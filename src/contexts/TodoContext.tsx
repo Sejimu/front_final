@@ -3,9 +3,8 @@ import { API } from "../utils/consts";
 import axios from "axios";
 
 interface Todo {
-  // Define the structure of a Todo object
-  // Adjust the types according to your actual data structure
-  // For example: id: number, text: string, completed: boolean, etc.
+  title: string;
+  completed: boolean;
 }
 
 interface TodoContextProps {
@@ -39,28 +38,48 @@ function TodoContext({ children }: TodoContextProps): JSX.Element {
   const [oneTodo, setOneTodo] = useState<Todo | null>(null);
 
   async function getTodos(): Promise<void> {
-    const { data } = await axios.get<Todo[]>(API);
-    setTodos(data);
+    try {
+      const { data } = await axios.get<Todo[]>(API);
+      setTodos(data);
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   async function addTodo(newTodo: Todo): Promise<void> {
-    await axios.post(API, newTodo);
-    getTodos();
+    try {
+      await axios.post(API, newTodo);
+      getTodos();
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   async function deleteTodo(id: number): Promise<void> {
-    await axios.delete(`${API}/${id}`);
-    getTodos();
+    try {
+      await axios.delete(`${API}/${id}`);
+      getTodos();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async function getOneTodo(id: number): Promise<void> {
-    const { data } = await axios.get<Todo>(`${API}/${id}`);
-    setOneTodo(data);
+    try {
+      const { data } = await axios.get<Todo>(`${API}/${id}`);
+      setOneTodo(data);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async function editTodo(id: number, newTodo: Todo): Promise<void> {
-    await axios.patch(`${API}/${id}`, newTodo);
-    getTodos();
+    try {
+      await axios.patch(`${API}/${id}`, newTodo);
+      getTodos();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   const value: TodoContextValue = {
