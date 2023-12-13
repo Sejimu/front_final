@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useTodoContext } from "../contexts/TodoContext";
 import ListGroup from "react-bootstrap/ListGroup";
 import TodoItem from "./TodoItem";
