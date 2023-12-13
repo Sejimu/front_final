@@ -20,6 +20,7 @@ function AddTodo(): JSX.Element {
     }
 
     const newTodo = {
+      id: parseInt(Date()),
       title,
       completed: false,
     };
